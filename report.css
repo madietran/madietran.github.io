@@ -1,0 +1,243 @@
+/* General */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+
+#title h1 {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar li {
+  position: relative;
+
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 8px 0 8px 20px;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #2c4964;
+  white-space: nowrap;
+  transition: 0.3s;
+  border-bottom: 2px solid #fff;
+  padding: 5px 2px;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 25px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #e05353;
+  border-color: #e05353;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgb(249, 214, 201);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: none;
+  color: #082744;
+  border: none;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 20px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #e05353;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+/* Cover page */
+#cover-page {
+  position: relative;
+  height: max-content;
+}
+#report-info {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  width: max-content;
+  height: max-content;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  padding: 4rem;
+  color: #082744;
+}
+/* Main  */
+/* Content Section */
+.report-section {
+  padding: 5rem 3rem 5rem 3rem;
+  height: max-content;
+}
+section > h2 {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.personal-reflection p,
+#group-reflection-content p,
+.personal-info p {
+  padding-top: 10px;
+}
+
+.personal-reflection h4,
+#group-reflection-content h4,
+.personal-info h4 {
+  font-weight: 40px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: #e05353 solid 2px;
+  width: 30%;
+}
+
+.personal-reflection h4:hover,
+#group-reflection-content h4:hover,
+.personal-info h4:hover {
+  color: #e05353;
+  cursor: pointer;
+}
+
+.personal-info img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+}
+
+.personal-info p {
+  background-color: #fff1ef;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.personal-reflection p,
+#group-reflection-content p {
+  padding-top: 10px;
+}
+
+.personal-reflection h4,
+#group-reflection-content h4 {
+  font-weight: 40px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: #e05353 solid 2px;
+  width: 30%;
+}
+
+.personal-reflection h4:hover,
+#group-reflection-content h4:hover {
+  color: #e05353;
+  cursor: pointer;
+}
+
+#references-content li {
+  padding-top: 10px;
+}
+h3 {
+  padding-bottom: 20px;
+}
